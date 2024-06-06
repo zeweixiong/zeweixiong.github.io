@@ -23,9 +23,7 @@ task :publish => [:generate] do
     pwd = Dir.pwd
     Dir.chdir tmp
 
-#    system "git init"
-    system "git remote add origin git@github.com:zeweixiong/zeweixiong.github.io.git"
-    system "git pull origin master"
+    system "git clone -b master git@github.com:zeweixiong/zeweixiong.github.io.git ./"
 
     cp_r "#{pwd}/_site/.", tmp
 

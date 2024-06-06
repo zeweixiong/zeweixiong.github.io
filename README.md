@@ -11,6 +11,10 @@ I also credit the template provider [Spencer H. Bryngelson](https://github.com/s
 ## Setup
 push main branch -> set settings/actions/general/Workflow permissions/Read and write permissions -> wait actions -> run `rake publish` at the local repo -> set settings/pages/deploy from a branch and choice the new one (in my case, it is master) -> wait actions -> website accessible
 
+`git add .; git commit -m 'clean'; git push`
+
+`rake publish`
+
 ## License
 
 Copyright 2021, Spencer H. Bryngelson and controlled via the MIT license.
