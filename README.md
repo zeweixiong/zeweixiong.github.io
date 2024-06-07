@@ -15,6 +15,8 @@ push main branch -> set settings/actions/general/Workflow permissions/Read and w
 
 `rake publish`
 
+In contrast to the local jekyll, there is an issue with liquid filter `relative_url` in github, so I replace them manually.
+
 ## License
 
 Copyright 2021, Spencer H. Bryngelson and controlled via the MIT license.
