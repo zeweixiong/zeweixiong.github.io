@@ -18,11 +18,19 @@ contact: >
   Planckstraße 1<br/>
   64291 Darmstadt, Germany
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 # Pages shown in navbar
 nav_pages:
   - name: about
   - name: publications
   - name: talks
+  - name: blogs
 
 include:
   - .htaccess

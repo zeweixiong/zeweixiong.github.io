@@ -1,18 +1,157 @@
 ---
-layout: default
+layout: defaultwide
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<style>
+* {
+box-sizing: border-box;
+}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+
+.tags {
+margin-bottom: -5px;
+}
+div {
+display: block;
+}
+
+
+.highlight pre, pre, .highlight .hll {
+background-color: #f8f8f8;
+border: 1px solid #ccc;
+padding: 6px 10px;
+border-radius: 3px;
+}
+.highlight pre code {
+white-space: pre;
+}
+.highlight pre {
+overflow-x: auto;
+}
+pre code {
+display: block;
+width: auto;
+word-wrap: normal;
+padding: 0;
+font-size: inherit;
+color: inherit;
+white-space: pre-wrap;
+background-color: transparent;
+border-radius: 0;
+}
+code, pre {
+font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+
+.post-container ul, .post-container ol {
+margin-bottom: 40px;
+}
+.pager {
+margin: 20px 0 0!important;
+padding: 0!important;
+text-align: center;
+list-style: none;
+}
+.pager:before {
+display: table;
+content: " ";
+}
+.pager:after {
+clear: both;
+}
+.pager li>a:hover, .pager li>a:focus {
+color: #fff;
+background-color: #0085a1;
+border: 1px solid #0085a1;
+}
+.post-container .pager li.previous {
+float: left;
+}
+.post-container .pager li.next {
+float: right;
+}
+.post-container .pager li {
+width: 48%;
+}
+.pager li {
+display: inline;
+}
+.post-container .pager li>a {
+width: 100%;
+}
+:-internal-direct-focus {
+outline-color: -webkit-focus-ring-color;
+outline-style: auto;
+outline-width: 5px;
+}
+::selection {
+color: #fff;
+text-shadow: none;
+background: #0085a1;
+}
+ul, menu, dir {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+</style>
+
+
+
+<div id="gridid" class="col-sm-12 col-xs-12">
+
+
+<header class="post-header">
+  <div class="tags">
+    {% for tag in page.tags %}
+      <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+    {% endfor %}
   </div>
+  <h1 class="post-title">{{ page.title }}</h1>
+  <h3 class="subheading">{{ page.subtitle }}</h3>
+  <span class="meta"><i>Posted on {{ page.date | date: "%B %-d, %Y" }}</i></span>
+</header>
 
+<div class="jumbotron">
+<article>
+<!-- Post Content -->
+  <div class="post-container">
+    <div class="row">
+    <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">-->
+    <div class="col-lg-12 col-md-12">
+
+    {{ content }}
+
+    <hr style="visibility: hidden;">
+
+    <ul class="pager">
+      {% if page.previous.url %}
+      <li class="previous">
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+        Previous<br>
+        <span>{{page.previous.title}}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.next.url %}
+      <li class="next">
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+        Next<br>
+        <span>{{page.next.title}}</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+
+    </div>
+    </div> 
+  </div>  
 </article>
+</div>
 
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</div>
