@@ -374,3 +374,7 @@ and the
 ## License
 
 MIT
+
+## Comments
+
+@240607: seems this popper folder can be removed.
