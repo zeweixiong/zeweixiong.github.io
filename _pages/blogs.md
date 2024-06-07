@@ -1,5 +1,5 @@
 ---
-title: "Blogs"
+title: "Blog"
 layout: pagelay
 sitemap: false
 permalink: /blogs/
