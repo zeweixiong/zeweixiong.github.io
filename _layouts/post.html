@@ -131,7 +131,11 @@ padding-inline-start: 40px;
     <ul class="pager">
       {% if page.previous.url %}
       <li class="previous">
+        {{ page.previous.url }}
+        {{ page.next.url }}
+        {{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}
         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+        <!--<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">-->
         Previous<br>
         <span>{{page.previous.title}}</span>
         </a>
