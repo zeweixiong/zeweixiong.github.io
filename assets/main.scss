@@ -7,6 +7,7 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 // @import "variables";
 @import "bootstrap/bootstrap";
 // @import "syntax-highlighting";
+@import "sass-code-highlight/default";
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 // @import "bootstrap_customization";
 @import "bootstrap";
