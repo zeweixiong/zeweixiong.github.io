@@ -7,6 +7,7 @@ body.a::before { content: ""; position: fixed; top: 0; left: 0; bottom: 0; right
 body.b::before { content: ""; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(../images/bg2.jpg); background-size: 100% auto; background-repeat: repeat-y; opacity: 0.4; }
 body.c::before { content: ""; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(../images/bg3.jpg); background-size: 100% auto; background-repeat: repeat-y; opacity: 0.4; }
 body.d::before { content: ""; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(../images/bg4.jpg); background-size: 100% auto; background-repeat: repeat-y; opacity: 0.4; }
+body.e::before { content: ""; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(../images/bg5.jpg); background-size: 100% auto; background-repeat: repeat-y; opacity: 0.4; }
 
 a { color: #36a; text-decoration: none; background-color: transparent; }
 
