@@ -75,6 +75,29 @@ $\mathscr{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$
 
 $\mathfrak{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$
 
+### Issues
+
+Here I report some weird issues:
+
+- Some equations can compile while the others cannot:
+
+    $[1+\delta_{RC}] \theta^{THY}_{SM}$
+
+    $\theta^{THY}_{SM} [1+\delta\_{RC}]$ 
+    
+    $\theta^{THY}_{SM} [1+\delta_{RC}]$ 
+
+- Another example:
+
+    $M_\beta = \frac{ {\hat g}^2}{8\hat{M}^2 } V_{ud}$ 
+
+    $M_\beta = \frac{ {\hat g}^2}{8\hat{M_W}^2 } V_{ud}$ 
+
+    $M_\beta = \frac{ {\hat g}^2}{8\hat{M}_W^2 } V_{ud}$ 
+
+    So, it suggests to check the equations twice when writing new posts.
+
+
 ---
 
 References:
