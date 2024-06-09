@@ -30,7 +30,7 @@ nav_pages:
   - name: about
   - name: publications
   - name: talks
-  - name: blogs
+  - name: blog
 
 include:
   - .htaccess
