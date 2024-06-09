@@ -27,7 +27,7 @@ Galactic r-process budget: The mass yield from r-process in Milky-way galaxy is 
 
 Calculating r-process: Since typically $v \propto r$, so $\rho=\rho_0 (t/t_0)^{-3}$.
 
-The r-process network is a LARGE and coupled system of stiff ODEs. So we need SkyNet! Given the initial condition of Ye, we can calculate NSE & Yn/Yseed & La/Ac abundance & fission cycle. At around 0.1-1GK, there is still a self-heating or say the temperature rising due to neutron captures and beta decays.
+The r-process network is a LARGE and coupled system of stiff ODEs. Given the initial condition of Ye, we can calculate NSE & Yn/Yseed & La/Ac abundance & fission cycle. At around 0.1-1GK, there is still a self-heating or say the temperature rising due to neutron captures and beta decays.
 
 ### Kilonova - B. Metzger 
 
