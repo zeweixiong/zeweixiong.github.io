@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cheatsheet for Markdown - Zewei Xiong</title>
+  <meta name="description" content="Academic and official webpage of Dr. Zewei Xiong">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="https://zeweixiong.github.io/2021/02/19/cheatsheet-markdown.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="https://zeweixiong.github.io/favicon.ico">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6HEPJ41K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H6HEPJ41K9');
+</script>
+
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+  var upperLimit = 5;
+  var randomNum = Math.floor((Math.random() * upperLimit));    
+  $("body").toggleClass('abcdefghijklmnopqrstuvwxyz'[randomNum]);
+});
+</script>
+
+</head>
+
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="https://zeweixiong.github.io/">
+      <img src="https://zeweixiong.github.io/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Zewei Xiong
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://zeweixiong.github.io/">Home</a>
+        </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/about">About</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/publications">Publications</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/talks">Talks</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/blog">Blog</a>
+          </li> 
+        
+      </ul>
+    </div>
+</nav>
+
+
+    <div class="container-fluid", style="max-width: 90vw">
+      <div class="row">
+        <style>
+* {
+box-sizing: border-box;
+}
+
+
+.tags {
+margin-bottom: -5px;
+}
+div {
+display: block;
+}
+
+
+.highlight pre, pre, .highlight .hll {
+background-color: #f8f8f8;
+border: 1px solid #ccc;
+padding: 6px 10px;
+border-radius: 3px;
+}
+.highlight pre code {
+white-space: pre;
+}
+.highlight pre {
+overflow-x: auto;
+}
+pre code {
+display: block;
+width: auto;
+word-wrap: normal;
+padding: 0;
+font-size: inherit;
+color: inherit;
+white-space: pre-wrap;
+background-color: transparent;
+border-radius: 0;
+}
+code {
+padding: 2px 4px;
+font-size: 90%;
+color: #c7254e;
+background-color: #f9f2f4;
+border-radius: 4px;
+}
+code, pre {
+font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+
+.post-container ul, .post-container ol {
+margin-bottom: 40px;
+}
+.pager {
+margin: 20px 0 0!important;
+padding: 0!important;
+text-align: center;
+list-style: none;
+}
+.pager:before {
+display: table;
+content: " ";
+}
+.pager:after {
+clear: both;
+}
+.pager li>a:hover, .pager li>a:focus {
+color: #fff;
+background-color: #0085a1;
+border: 1px solid #0085a1;
+}
+.post-container .pager li.previous {
+float: left;
+}
+.post-container .pager li.next {
+float: right;
+}
+.post-container .pager li {
+width: 48%;
+}
+.pager li {
+display: inline;
+}
+.post-container .pager li>a {
+width: 100%;
+}
+:-internal-direct-focus {
+outline-color: -webkit-focus-ring-color;
+outline-style: auto;
+outline-width: 5px;
+}
+::selection {
+color: #fff;
+text-shadow: none;
+background: #0085a1;
+}
+ul, menu, dir {
+display: block;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+
+li ol li{
+list-style-type: lower-alpha;
+}
+li ol li ol li{
+list-style-type: lower-roman;
+}
+</style>
+
+
+
+<div id="gridid" class="col-sm-12 col-xs-12">
+
+
+<header class="post-header">
+  <div class="tags">
+    
+      <a class="tag" href="https://zeweixiong.github.io/tags/#cheatsheet" title="cheatsheet">cheatsheet</a>
+    
+      <a class="tag" href="https://zeweixiong.github.io/tags/#markdown" title="markdown">markdown</a>
+    
+  </div>
+  <h1 class="post-title">Cheatsheet for Markdown</h1>
+  <h3 class="subheading">Markdown command</h3>
+  <span class="meta"><i>Posted on February 19, 2021</i></span>
+</header>
+
+<div class="jumbotron">
+<article>
+<!-- Post Content -->
+  <div class="post-container">
+    <div class="row">
+    <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">-->
+    <div class="col-lg-12 col-md-12">
+
+    <h3 id="headers">Headers</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+</code></pre></div></div>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alt-H1
+======
+Alt-H2
+------
+</code></pre></div></div>
+
+<h1 id="alt-h1">Alt-H1</h1>
+
+<h2 id="alt-h2">Alt-H2</h2>
+
+<h3 id="emphasis">Emphasis</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*asterisks* _underscores_ **asterisks** __underscores__
+**asterisks and _underscores_** ~~Scratch this~~
+</code></pre></div></div>
+<p><em>asterisks</em> <em>underscores</em> <strong>asterisks</strong> <strong>underscores</strong></p>
+
+<p><strong>asterisks and <em>underscores</em></strong> <del>Scratch this</del></p>
+
+<p>Lists</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First ordered list item
+2. Another item
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+</code></pre></div></div>
+<ol>
+  <li>First ordered list item</li>
+  <li>Another item
+    <ul>
+      <li>Unordered list can use asterisks</li>
+      <li>Or minuses</li>
+      <li>Or pluses</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="links">Links</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or &lt;http://www.example.com&gt;.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+</code></pre></div></div>
+<p><a href="https://www.google.com">I’m an inline-style link</a></p>
+
+<p><a href="https://www.google.com" title="Google's Homepage">I’m an inline-style link with title</a></p>
+
+<p>Or leave it empty and use the [link text itself].</p>
+
+<p>URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <a href="http://www.example.com">http://www.example.com</a>.</p>
+
+<h3 id="images">Images</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+</code></pre></div></div>
+<p>Inline-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1" /></p>
+
+<p>Reference-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2" /></p>
+
+<h3 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Inline `code` has `back-ticks around` it.
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s # Line break is needed when there is a comment at the end of line for python evironment
+
+print s
+```
+</code></pre></div></div>
+
+<p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Python syntax highlighting</span><span class="sh">"</span>
+<span class="k">print</span> <span class="n">s</span>
+</code></pre></div></div>
+
+<h3 id="tables">Tables</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>Less</th>
+      <th>Pretty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Still</em></td>
+      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
+      <td><strong>nicely</strong></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="blockquotes">Blockquotes</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
+
+Quote break.
+
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+</code></pre></div></div>
+<blockquote>
+  <p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+
+<p>Quote break.</p>
+
+<blockquote>
+  <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+
+<h3 id="inline-html">Inline HTML</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;dl&gt;
+  &lt;dt&gt;Definition list&lt;/dt&gt;
+  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
+
+  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre></div></div>
+<dl>
+  <dt>Definition list</dt>
+  <dd>
+    <p>Is something people use sometimes.&lt;/dd&gt;</p>
+
+    <dt>Markdown in HTML</dt>
+    <dd>
+      <p>Does <em>not</em> work <strong>very</strong> well. Use HTML <em>tags</em>.&lt;/dd&gt;
+&lt;/dl&gt;</p>
+
+      <h3 id="horizontal-rule">Horizontal Rule</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+</code></pre></div>      </div>
+      <p>Three or more…</p>
+
+      <hr />
+
+      <p>Hyphens</p>
+
+      <hr />
+
+      <p>Asterisks</p>
+
+      <hr />
+
+      <p>Underscores</p>
+
+      <h3 id="line-breaks">Line Breaks</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+</code></pre></div>      </div>
+      <p>Here’s a line for us to start with.</p>
+
+      <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+
+      <p>This line is also a separate paragraph, but…
+This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+
+      <h3 id="youtube-videos">YouTube Videos</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=IuqFFqrET0g
+" target="_blank"&gt;&lt;img src="http://img.youtube.com/vi/IuqFFqrET0g/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;
+</code></pre></div>      </div>
+      <p><a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=IuqFFqrET0g" target="_blank"><img src="http://img.youtube.com/vi/IuqFFqrET0g/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+
+      <h3 id="footnote">Footnote</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+</code></pre></div>      </div>
+      <p>Here’s a sentence with a footnote. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+      <h3 id="definition-list">Definition List</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>term
+: definition
+</code></pre></div>      </div>
+      <dl>
+        <dt>term</dt>
+        <dd>definition</dd>
+      </dl>
+
+      <h3 id="task-list">Task List</h3>
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+</code></pre></div>      </div>
+      <ul class="task-list">
+        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Write the press release</li>
+        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the website</li>
+        <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Contact the media</li>
+      </ul>
+
+    </dd>
+  </dd>
+</dl>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is the footnote. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+    <hr style="visibility: hidden;">
+
+    <ul class="pager">
+      
+      <li class="previous">
+        <a href="/2018/07/01/TALENT-summer-school-note.html" data-toggle="tooltip" data-placement="top" title="Note of TALENT summer school in Seattle">
+        Previous<br>
+        <span>Note of TALENT summer school in Seattle</span>
+        </a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/2021/02/20/cheatsheet-pandas.html" data-toggle="tooltip" data-placement="top" title="Cheatsheet for Pandas">
+        Next<br>
+        <span>Cheatsheet for Pandas</span>
+        </a>
+      </li>
+      
+    </ul>
+
+    </div>
+    </div> 
+  </div>  
+</article>
+</div>
+
+
+</div>
+
+
+
+      </div>
+    </div>
+
+    <br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+  <div class="row">
+  <div class="col-sm-6">
+    <h5><a href="https://zeweixiong.github.io/contact">Contact</a></h5>
+    <p>Zewei Xiong<br/> Postdoctoral Researcher<br/> GSI Helmholtzzentrum für Schwerionenforschung<br/> Planckstraße 1<br/> 64291 Darmstadt, Germany
+</p>
+  </div>
+
+  <div class="col-sm-2">
+  </div>
+
+  <div class="col-sm-4">
+    <h5>Fundings</h5>	
+    <a href="https://erc.europa.eu" title="ERC" target="_blank"><img width="100%" src="https://zeweixiong.github.io/images/LOGO_ERC-FLAG_FP.png" alt="EU flag"></a>
+  </div>
+</div>
+
+      <center><p>&copy 2024 Zewei Xiong </p></center>
+	</div>
+  </div>
+</div>
+
+<script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/popper/dist/umd/popper.min.js"></script> -->
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/shb.js"></script> -->
+
+
+  </body>
+
+</html>

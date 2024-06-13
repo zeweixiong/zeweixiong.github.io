@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LaTeX in HTML - Zewei Xiong</title>
+  <meta name="description" content="Academic and official webpage of Dr. Zewei Xiong">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="https://zeweixiong.github.io/2024/06/07/latex-in-html.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="https://zeweixiong.github.io/favicon.ico">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6HEPJ41K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H6HEPJ41K9');
+</script>
+
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+  var upperLimit = 5;
+  var randomNum = Math.floor((Math.random() * upperLimit));    
+  $("body").toggleClass('abcdefghijklmnopqrstuvwxyz'[randomNum]);
+});
+</script>
+
+</head>
+
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="https://zeweixiong.github.io/">
+      <img src="https://zeweixiong.github.io/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Zewei Xiong
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://zeweixiong.github.io/">Home</a>
+        </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/about">About</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/publications">Publications</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/talks">Talks</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/blog">Blog</a>
+          </li> 
+        
+      </ul>
+    </div>
+</nav>
+
+
+    <div class="container-fluid", style="max-width: 90vw">
+      <div class="row">
+        <style>
+* {
+box-sizing: border-box;
+}
+
+
+.tags {
+margin-bottom: -5px;
+}
+div {
+display: block;
+}
+
+
+.highlight pre, pre, .highlight .hll {
+background-color: #f8f8f8;
+border: 1px solid #ccc;
+padding: 6px 10px;
+border-radius: 3px;
+}
+.highlight pre code {
+white-space: pre;
+}
+.highlight pre {
+overflow-x: auto;
+}
+pre code {
+display: block;
+width: auto;
+word-wrap: normal;
+padding: 0;
+font-size: inherit;
+color: inherit;
+white-space: pre-wrap;
+background-color: transparent;
+border-radius: 0;
+}
+code {
+padding: 2px 4px;
+font-size: 90%;
+color: #c7254e;
+background-color: #f9f2f4;
+border-radius: 4px;
+}
+code, pre {
+font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+
+.post-container ul, .post-container ol {
+margin-bottom: 40px;
+}
+.pager {
+margin: 20px 0 0!important;
+padding: 0!important;
+text-align: center;
+list-style: none;
+}
+.pager:before {
+display: table;
+content: " ";
+}
+.pager:after {
+clear: both;
+}
+.pager li>a:hover, .pager li>a:focus {
+color: #fff;
+background-color: #0085a1;
+border: 1px solid #0085a1;
+}
+.post-container .pager li.previous {
+float: left;
+}
+.post-container .pager li.next {
+float: right;
+}
+.post-container .pager li {
+width: 48%;
+}
+.pager li {
+display: inline;
+}
+.post-container .pager li>a {
+width: 100%;
+}
+:-internal-direct-focus {
+outline-color: -webkit-focus-ring-color;
+outline-style: auto;
+outline-width: 5px;
+}
+::selection {
+color: #fff;
+text-shadow: none;
+background: #0085a1;
+}
+ul, menu, dir {
+display: block;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+
+li ol li{
+list-style-type: lower-alpha;
+}
+li ol li ol li{
+list-style-type: lower-roman;
+}
+</style>
+
+
+
+<div id="gridid" class="col-sm-12 col-xs-12">
+
+
+<header class="post-header">
+  <div class="tags">
+    
+      <a class="tag" href="https://zeweixiong.github.io/tags/#latex" title="latex">latex</a>
+    
+      <a class="tag" href="https://zeweixiong.github.io/tags/#html" title="html">html</a>
+    
+  </div>
+  <h1 class="post-title">LaTeX in HTML</h1>
+  <h3 class="subheading"></h3>
+  <span class="meta"><i>Posted on June 7, 2024</i></span>
+</header>
+
+<div class="jumbotron">
+<article>
+<!-- Post Content -->
+  <div class="post-container">
+    <div class="row">
+    <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">-->
+    <div class="col-lg-12 col-md-12">
+
+    <h3 id="implementation">Implementation</h3>
+
+<p>Insert the follow code into <code class="language-plaintext highlighter-rouge">_layouts/post.html</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/x-mathjax-config"</span><span class="nt">&gt;</span>
+    <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nc">Config</span><span class="p">({</span>
+        <span class="na">tex2jax</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">skipTags</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">noscript</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">style</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">textarea</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">pre</span><span class="dl">'</span><span class="p">],</span>
+        <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">]]</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>One can define a page variable &amp; test <code class="language-plaintext highlighter-rouge">if uselatex</code>. Make sure to include <code class="language-plaintext highlighter-rouge">uselatex: true</code> at the front matter of the <code class="language-plaintext highlighter-rouge">md</code> file.</p>
+
+<h3 id="outcome">Outcome</h3>
+
+<p>The followings demonstrate the $\LaTeX$ equations:</p>
+
+\[H_n=1+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n}=\sum_{i=1}^{n}\frac{1}{i}=O(\log n)\]
+
+\[\begin{align}
+x' &amp;= \frac{x-ut/c^2}{\sqrt{1-u^2/c^2}} \\
+t' &amp;= \frac{t-ux/c^2}{\sqrt{1-u^2/c^2}}\\
+y' &amp;= y \\
+z' &amp;= z
+\end{align}\]
+
+\[\begin{align} \label{rotation}
+x' &amp;= x\cos(\theta) + y\sin(\theta) \\
+y' &amp;= y\cos(\theta) - x\sin(\theta) \\
+z' &amp;= z \\
+t' &amp;= t
+\end{align}\]
+
+<p>One can also use inline formula as $f_\nu(E) = \frac{1}{e^{E/T}+1}$.</p>
+
+<p>It also works for different math fonts:</p>
+
+<p>$ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz\alpha\beta\gamma\Gamma\delta\Delta\epsilon\varepsilon\zeta\eta\theta\vartheta\Theta\iota\kappa\lambda\Lambda\mu\nu\xi\Xi\pi\Pi\rho\varrho\sigma\Sigma\tau\upsilon\Upsilon\phi\varphi\Phi\chi\psi\Psi\omega\Omega$</p>
+
+<p>$\mathit{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz\alpha\beta\gamma\Gamma\delta\Delta\epsilon\varepsilon\zeta\eta\theta\vartheta\Theta\iota\kappa\lambda\Lambda\mu\nu\xi\Xi\pi\Pi\rho\varrho\sigma\Sigma\tau\upsilon\Upsilon\phi\varphi\Phi\chi\psi\Psi\omega\Omega}$</p>
+
+<p>$\mathbf{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz\alpha\beta\gamma\Gamma\delta\Delta\epsilon\varepsilon\zeta\eta\theta\vartheta\Theta\iota\kappa\lambda\Lambda\mu\nu\xi\Xi\pi\Pi\rho\varrho\sigma\Sigma\tau\upsilon\Upsilon\phi\varphi\Phi\chi\psi\Psi\omega\Omega}$</p>
+
+<p>$\mathrm{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz\alpha\beta\gamma\Gamma\delta\Delta\epsilon\varepsilon\zeta\eta\theta\vartheta\Theta\iota\kappa\lambda\Lambda\mu\nu\xi\Xi\pi\Pi\rho\varrho\sigma\Sigma\tau\upsilon\Upsilon\phi\varphi\Phi\chi\psi\Psi\omega\Omega}$</p>
+
+<p>$\mathsf{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz\alpha\beta\gamma\Gamma\delta\Delta\epsilon\varepsilon\zeta\eta\theta\vartheta\Theta\iota\kappa\lambda\Lambda\mu\nu\xi\Xi\pi\Pi\rho\varrho\sigma\Sigma\tau\upsilon\Upsilon\phi\varphi\Phi\chi\psi\Psi\omega\Omega}$</p>
+
+<p>$\mathtt{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$</p>
+
+<p>$\mathbb{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$</p>
+
+<p>$\mathcal{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$</p>
+
+<p>$\mathscr{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$</p>
+
+<p>$\mathfrak{ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijlmnopqrstuvwxyz}$</p>
+
+<h3 id="issues">Issues</h3>
+
+<p>Here I report some weird issues:</p>
+
+<ul>
+  <li>
+    <p>Some equations can compile while the others cannot:</p>
+
+    <p>$[1+\delta_{RC}] \theta^{THY}_{SM}$</p>
+
+    <p>$\theta^{THY}_{SM} [1+\delta_{RC}]$</p>
+
+    <p>$\theta^{THY}<em>{SM} [1+\delta</em>{RC}]$</p>
+  </li>
+  <li>
+    <p>Another example:</p>
+
+    <p>$M_\beta = \frac{ {\hat g}^2}{8\hat{M}^2 } V_{ud}$</p>
+
+    <p>$M_\beta = \frac{ {\hat g}^2}{8\hat{M_W}^2 } V_{ud}$</p>
+
+    <p>$M_\beta = \frac{ {\hat g}^2}{8\hat{M}<em>W^2 } V</em>{ud}$</p>
+
+    <p>So, it suggests to check the equations twice when writing new posts.</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>References:</p>
+
+<ol>
+  <li><a href="https://zhuanlan.zhihu.com/p/36302775">Make GitHub Page support Latex equations</a></li>
+</ol>
+
+
+    <hr style="visibility: hidden;">
+
+    <ul class="pager">
+      
+      <li class="previous">
+        <a href="/2021/03/02/cheatsheet-plotly.html" data-toggle="tooltip" data-placement="top" title="Cheatsheet for Plotly">
+        Previous<br>
+        <span>Cheatsheet for Plotly</span>
+        </a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/2024/06/09/useful-website-list.html" data-toggle="tooltip" data-placement="top" title="List of Useful Websites">
+        Next<br>
+        <span>List of Useful Websites</span>
+        </a>
+      </li>
+      
+    </ul>
+
+    </div>
+    </div> 
+  </div>  
+</article>
+</div>
+
+
+</div>
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+        }
+    });
+</script>
+
+
+      </div>
+    </div>
+
+    <br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+  <div class="row">
+  <div class="col-sm-6">
+    <h5><a href="https://zeweixiong.github.io/contact">Contact</a></h5>
+    <p>Zewei Xiong<br/> Postdoctoral Researcher<br/> GSI Helmholtzzentrum für Schwerionenforschung<br/> Planckstraße 1<br/> 64291 Darmstadt, Germany
+</p>
+  </div>
+
+  <div class="col-sm-2">
+  </div>
+
+  <div class="col-sm-4">
+    <h5>Fundings</h5>	
+    <a href="https://erc.europa.eu" title="ERC" target="_blank"><img width="100%" src="https://zeweixiong.github.io/images/LOGO_ERC-FLAG_FP.png" alt="EU flag"></a>
+  </div>
+</div>
+
+      <center><p>&copy 2024 Zewei Xiong </p></center>
+	</div>
+  </div>
+</div>
+
+<script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/popper/dist/umd/popper.min.js"></script> -->
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/shb.js"></script> -->
+
+
+  </body>
+
+</html>

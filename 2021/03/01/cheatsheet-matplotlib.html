@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cheatsheet for Matplotlib - Zewei Xiong</title>
+  <meta name="description" content="Academic and official webpage of Dr. Zewei Xiong">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="https://zeweixiong.github.io/2021/03/01/cheatsheet-matplotlib.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="https://zeweixiong.github.io/favicon.ico">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6HEPJ41K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H6HEPJ41K9');
+</script>
+
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+  var upperLimit = 5;
+  var randomNum = Math.floor((Math.random() * upperLimit));    
+  $("body").toggleClass('abcdefghijklmnopqrstuvwxyz'[randomNum]);
+});
+</script>
+
+</head>
+
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="https://zeweixiong.github.io/">
+      <img src="https://zeweixiong.github.io/favicon.ico" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Zewei Xiong
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://zeweixiong.github.io/">Home</a>
+        </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/about">About</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/publications">Publications</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/talks">Talks</a>
+          </li> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/blog">Blog</a>
+          </li> 
+        
+      </ul>
+    </div>
+</nav>
+
+
+    <div class="container-fluid", style="max-width: 90vw">
+      <div class="row">
+        <style>
+* {
+box-sizing: border-box;
+}
+
+
+.tags {
+margin-bottom: -5px;
+}
+div {
+display: block;
+}
+
+
+.highlight pre, pre, .highlight .hll {
+background-color: #f8f8f8;
+border: 1px solid #ccc;
+padding: 6px 10px;
+border-radius: 3px;
+}
+.highlight pre code {
+white-space: pre;
+}
+.highlight pre {
+overflow-x: auto;
+}
+pre code {
+display: block;
+width: auto;
+word-wrap: normal;
+padding: 0;
+font-size: inherit;
+color: inherit;
+white-space: pre-wrap;
+background-color: transparent;
+border-radius: 0;
+}
+code {
+padding: 2px 4px;
+font-size: 90%;
+color: #c7254e;
+background-color: #f9f2f4;
+border-radius: 4px;
+}
+code, pre {
+font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+
+.post-container ul, .post-container ol {
+margin-bottom: 40px;
+}
+.pager {
+margin: 20px 0 0!important;
+padding: 0!important;
+text-align: center;
+list-style: none;
+}
+.pager:before {
+display: table;
+content: " ";
+}
+.pager:after {
+clear: both;
+}
+.pager li>a:hover, .pager li>a:focus {
+color: #fff;
+background-color: #0085a1;
+border: 1px solid #0085a1;
+}
+.post-container .pager li.previous {
+float: left;
+}
+.post-container .pager li.next {
+float: right;
+}
+.post-container .pager li {
+width: 48%;
+}
+.pager li {
+display: inline;
+}
+.post-container .pager li>a {
+width: 100%;
+}
+:-internal-direct-focus {
+outline-color: -webkit-focus-ring-color;
+outline-style: auto;
+outline-width: 5px;
+}
+::selection {
+color: #fff;
+text-shadow: none;
+background: #0085a1;
+}
+ul, menu, dir {
+display: block;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+
+li ol li{
+list-style-type: lower-alpha;
+}
+li ol li ol li{
+list-style-type: lower-roman;
+}
+</style>
+
+
+
+<div id="gridid" class="col-sm-12 col-xs-12">
+
+
+<header class="post-header">
+  <div class="tags">
+    
+      <a class="tag" href="https://zeweixiong.github.io/tags/#cheatsheet" title="cheatsheet">cheatsheet</a>
+    
+  </div>
+  <h1 class="post-title">Cheatsheet for Matplotlib</h1>
+  <h3 class="subheading">Matplotlib command</h3>
+  <span class="meta"><i>Posted on March 1, 2021</i></span>
+</header>
+
+<div class="jumbotron">
+<article>
+<!-- Post Content -->
+  <div class="post-container">
+    <div class="row">
+    <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">-->
+    <div class="col-lg-12 col-md-12">
+
+    <h3 id="cheatsheet-for-matplotlib-basic">Cheatsheet for Matplotlib basic</h3>
+
+<p>Configuration for a single plot:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">style</span><span class="p">.</span><span class="nf">use</span><span class="p">(</span><span class="sh">'</span><span class="s">ggplot</span><span class="sh">'</span><span class="p">)</span> <span class="c1"># style can be 'default', 'classic', 'ggplot', 'seaborn', etc (see https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html)
+</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">data_x</span><span class="p">,</span> <span class="n">data_y</span><span class="p">,</span> <span class="sh">'</span><span class="s">k.-</span><span class="sh">'</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylim</span><span class="p">(</span><span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="sh">'</span><span class="s">$\varrho(t)$</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">'</span><span class="s">Here is the title</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="sh">'</span><span class="s">center left</span><span class="sh">'</span><span class="p">,</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="nf">gcf</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">.</span><span class="nf">set_size_inches</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="c1"># Or in this way
+</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="sh">'</span><span class="s">figure.dpi</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="sh">'</span><span class="s">figure.figsize</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Configuration for multiple subplots:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="nf">figure</span><span class="p">()</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="p">.</span><span class="nf">add_subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="p">.</span><span class="nf">add_subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
+
+<span class="c1"># Or initialize in this way:
+</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="nf">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span>   <span class="n">gridspec_kw</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">width_ratios</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]})</span>
+<span class="n">fig</span><span class="p">.</span><span class="nf">set_size_inches</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">remove</span><span class="p">()</span> <span class="c1"># for 3D plot
+</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">fig</span><span class="p">.</span><span class="nf">add_subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">projection</span><span class="o">=</span><span class="sh">'</span><span class="s">3d</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">ppp1</span> <span class="o">=</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">plot_surface</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="sh">'</span><span class="s">coolwarm</span><span class="sh">'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">vmin</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">view_init</span><span class="p">(</span><span class="n">elev</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">azim</span><span class="o">=-</span><span class="mf">90.</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="n">dist</span> <span class="o">=</span> <span class="mf">7.</span>
+<span class="n">ppp1</span><span class="p">.</span><span class="nf">set_clim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">.</span><span class="nf">colorbar</span><span class="p">(</span><span class="n">ppp1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># set up a mask on the plotted matrix
+</span>
+<span class="n">mask_array</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">ma</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">matrix_plotted</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nf">isnan</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nb">float</span><span class="p">).</span><span class="n">T</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">mpl</span><span class="p">.</span><span class="n">cm</span><span class="p">.</span><span class="nf">get_cmap</span><span class="p">()</span>
+<span class="n">cmap</span><span class="p">.</span><span class="nf">set_bad</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">red</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">imshow</span><span class="p">(</span><span class="n">mask_array</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="sh">'</span><span class="s">hot</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">set_xticks</span><span class="p">(</span><span class="n">tick_list</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">set_title</span><span class="p">(</span><span class="sh">'</span><span class="s">Here is the title</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">].</span><span class="nf">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="sh">'</span><span class="s">hsv</span><span class="sh">'</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="n">marker_size</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="sh">'</span><span class="s">Text here</span><span class="sh">'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>If you want to clear and update the plot during a loop, use <code class="language-plaintext highlighter-rouge">clear_output()</code>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+
+<span class="nf">clear_output</span><span class="p">()</span>
+</code></pre></div></div>
+
+
+    <hr style="visibility: hidden;">
+
+    <ul class="pager">
+      
+      <li class="previous">
+        <a href="/2021/02/22/cheatsheet-seaborn.html" data-toggle="tooltip" data-placement="top" title="Cheatsheet for Seaborn">
+        Previous<br>
+        <span>Cheatsheet for Seaborn</span>
+        </a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/2021/03/02/cheatsheet-plotly.html" data-toggle="tooltip" data-placement="top" title="Cheatsheet for Plotly">
+        Next<br>
+        <span>Cheatsheet for Plotly</span>
+        </a>
+      </li>
+      
+    </ul>
+
+    </div>
+    </div> 
+  </div>  
+</article>
+</div>
+
+
+</div>
+
+
+
+      </div>
+    </div>
+
+    <br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+  <div class="row">
+  <div class="col-sm-6">
+    <h5><a href="https://zeweixiong.github.io/contact">Contact</a></h5>
+    <p>Zewei Xiong<br/> Postdoctoral Researcher<br/> GSI Helmholtzzentrum für Schwerionenforschung<br/> Planckstraße 1<br/> 64291 Darmstadt, Germany
+</p>
+  </div>
+
+  <div class="col-sm-2">
+  </div>
+
+  <div class="col-sm-4">
+    <h5>Fundings</h5>	
+    <a href="https://erc.europa.eu" title="ERC" target="_blank"><img width="100%" src="https://zeweixiong.github.io/images/LOGO_ERC-FLAG_FP.png" alt="EU flag"></a>
+  </div>
+</div>
+
+      <center><p>&copy 2024 Zewei Xiong </p></center>
+	</div>
+  </div>
+</div>
+
+<script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/popper/dist/umd/popper.min.js"></script> -->
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/https://zeweixiong.github.io/assets/javascript/shb.js"></script> -->
+
+
+  </body>
+
+</html>
