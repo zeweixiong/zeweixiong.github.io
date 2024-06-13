@@ -31,12 +31,7 @@ pre{
 
 {% assign bibtest = false %}
 {% if entry.file %}
-{% assign bibfile = "/papers/" | append: entry.file %}
-{% for file in site.static_files %}
-  {% if file.path contains bibfile %}
-   {% assign bibtest = true %}
-  {% endif %}
-{% endfor %}
+  {% assign bibtest = true %}
 {% endif %}
 
 {% if entry.doi %}
@@ -64,7 +59,7 @@ pre{
 {% endif %}
 
 {% if bibtest %}
-<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">LOCAL PDF</button></a>
+<a href="https://theory.gsi.de/nucastro/zewei_papers/{{ entry.key }}.pdf" target="_blank"><button class="btn btn-success btm-sm">LOCAL PDF</button></a>
 {% endif %}
 
 {% if entry.abstract %}
