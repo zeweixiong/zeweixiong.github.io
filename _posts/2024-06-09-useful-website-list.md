@@ -16,7 +16,7 @@ table-layout: fixed;
 ### Math & Physics
 
 | [Neutrino Unbound](https://www.nu.to.infn.it) | [Nudat 3](https://www.nndc.bnl.gov/nudat3) | [SAGA database](http://sagadatabase.jp)
-| [JINAbase](https://jinabase.pythonanywhere.com) | [Cococubed](https://cococubed.com) | [Tensor network](https://tensornetwork.org) \
+| [JINAbase](https://jinabase.pythonanywhere.com) | [Cococubed](https://cococubed.com) | [Tensor network](https://tensornetwork.org)
 | [Observing capability in LIGO](https://emfollow.docs.ligo.org/userguide/capabilities.html) | [NORAD Atomic Data](https://norad.astronomy.osu.edu/#AtomicDataTbl1) | [NIST Atomic Spetra Database](https://physics.nist.gov/PhysRefData/ASD/lines_form.html)
 | [Falstad math & physics demostrations](https://falstad.com)
 
