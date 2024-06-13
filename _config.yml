@@ -56,7 +56,7 @@ kramdown:
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
   syntax_highlighter: rouge
 
-plugins: ["jekyll/scholar"]
+plugins: ["jekyll/scholar", "jekyll-feed"]
 
 scholar:
   last_name: Xiong
