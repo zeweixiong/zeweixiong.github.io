@@ -64,7 +64,7 @@ pre{
 
 {% if entry.abstract %}
 <div id="a{{entry.key}}" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+<pre>{{ entry.bibtex | remove: "entry.abstract" | remove: "entry.file" }}</pre>
 </div>
 {% else %}
 <div id="a{{entry.key}}" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
