@@ -29,3 +29,7 @@ table-layout: fixed;
 
 | [meteoblue](https://www.meteoblue.com) | [ECMWF chart](https://charts.ecmwf.int/?facets=%7B%22Product%20type%22%3A%5B%5D%2C%22Parameters%22%3A%5B%22Cloud%22%2C%22Precipitation%22%5D%2C%22Type%22%3A%5B%5D%2C%22Range%22%3A%5B%22Medium%20%2815%20days%29%22%5D%7D) | [sat24](https://www.sat24.com/en-gb)
 | [zoom earth](https://zoom.earth) | [NOAA sky cover](https://graphical.weather.gov/sectors/conus.php) | [Clear outside](https://clearoutside.com/forecast/69.65/18.95)
+
+### Coding
+
+| [Brython](https://brython.info) | | |
