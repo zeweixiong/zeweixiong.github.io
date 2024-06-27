@@ -22,7 +22,12 @@ table-layout: fixed;
 
 ### Stargazing & Aurora borealis
 
-| [Sunrise & sunset](https://meteogram.org/sun) | [NOAA enthusiasts](https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard) | [See the Aurora](https://seetheaurora.com/live-data)
+| [astrobin](https://welcome.astrobin.com) | | |
+
+---
+
+| [Sunrise & sunset](https://meteogram.org/sun) | [Moon phase](https://www.timeanddate.com/moon/phases) | [CDS data](https://cds.unistra.fr) |
+| [ESO raw data](https://archive.eso.org/eso/eso_archive_main.html) | [NOAA enthusiasts](https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard) | [See the Aurora](https://seetheaurora.com/live-data)
 | [GFZ](https://spaceweather.gfz-potsdam.de) | [Polarlicht](https://aurora.mtwetter.de) | [Space weather archive](https://www.spaceweatherlive.com/en/archive)
 
 ---
@@ -32,7 +37,7 @@ table-layout: fixed;
 
 ---
 
-| [Calendar conversion](https://ytliu0.github.io/ChineseCalendar) | | |
+| [Chinese calendar](https://ytliu0.github.io/ChineseCalendar) | [Japanese calendar](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/caldb.cgi) | |
 
 ### Coding
 
