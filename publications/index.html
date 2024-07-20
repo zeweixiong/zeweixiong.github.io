@@ -274,8 +274,12 @@ function toggleAbstractgross2023data(parameter) {
     }
 }
 </script>
-</li>
-<li><style>
+</li></ol>
+</div>
+
+<div class="jumbotron">
+  <h3 id="publications">Publications</h3>
+  <ol class="bibliography" reversed="reversed"><li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;
@@ -296,27 +300,27 @@ pre{
 </style>
 
 
-<!--<div class="text-justify"><span id="fernandez2023viscous">Fernández, R., Just, O., Xiong, Z., &amp; Martínez-Pinedo, G. (2023). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>.</span></div>-->
-<div class="text-justify"><span id="fernandez2023viscous">Fernández, R., Just, O., <b>Xiong, Z.</b>, &amp; Martínez-Pinedo, G. (2023). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>.</span></div>
+<!--<div class="text-justify"><span id="fernandez2024viscous">Fernández, R., Just, O., Xiong, Z., &amp; Martínez-Pinedo, G. (2024). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>. <i>110</i>(2), 023001.</span></div>-->
+<div class="text-justify"><span id="fernandez2024viscous">Fernández, R., Just, O., <b>Xiong, Z.</b>, &amp; Martínez-Pinedo, G. (2024). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>. <i>110</i>(2), 023001.</span></div>
 
 <!-- You can use the below to make your name bold -->
-<!-- <span id="fernandez2023viscous">Fernández, R., Just, O., Xiong, Z., &amp; Martínez-Pinedo, G. (2023). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>.</span></div> -->
+<!-- <span id="fernandez2024viscous">Fernández, R., Just, O., Xiong, Z., &amp; Martínez-Pinedo, G. (2024). <i>Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison</i>. <i>110</i>(2), 023001.</span></div> -->
 
 
 
 
 
 
-<a href="https://arxiv.org/abs/2307.02554" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
+<a href="https://doi.org/10.1103/PhysRevD.110.023001" target="_blank"><button class="btn btn-primary btm-sm">DOI</button></a>
 
 
 
 
-<button class="btn btn-danger btm-sm" onclick="toggleBibtexfernandez2023viscous()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexfernandez2024viscous()">BIB</button>
 
 
 
-<button class="btn btn-warning btm-sm" onclick="toggleAbstractfernandez2023viscous()">ABSTRACT</button>
+<button class="btn btn-warning btm-sm" onclick="toggleAbstractfernandez2024viscous()">ABSTRACT</button>
 
 
 
@@ -324,34 +328,43 @@ pre{
 
 
 
+<a href="https://theory.gsi.de/nucastro/zewei_papers/fernandez2024viscous.pdf" target="_blank"><button class="btn btn-success btm-sm">LOCAL PDF</button></a>
 
 
-<div id="afernandez2023viscous" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@unpublished{fernandez2023viscous,
+
+<div id="afernandez2024viscous" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>@article{fernandez2024viscous,
   author = {Fern{\'{a}}ndez, Rodrigo and Just, Oliver and Xiong, Zewei and Mart{\'{i}}nez-Pinedo, Gabriel},
   title = {{Viscous hydrodynamic evolution of neutron star merger accretion disks: a code comparison}},
-  year = {2023},
-  eprint = {2307.02554}
+  jornal = {Phys. Rev. D},
+  volume = {110},
+  number = {2},
+  pages = {023001},
+  year = {2024},
+  month = jul,
+  doi = {10.1103/PhysRevD.110.023001},
+  eprint = {2307.02554},
+  file = y
 }
 </pre>
 </div>
 
 
-<div id="bfernandez2023viscous" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+<div id="bfernandez2024viscous" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
 <pre>The accretion disk formed after a neutron star merger is an important contributor to the total ejecta from the merger, and hence to the kilonova and the r-process yields of each event. Axisymmetric viscous hydrodynamic simulations of these disks can capture thermal mass ejection due to neutrino absorption and in the advective phase – after neutrino cooling has subsided – and are thus likely to provide a lower-limit to the total disk ejecta relative to MHD evolution. Here we present a comparison between two viscous hydrodynamic codes that have been used extensively on this problem over the past decade: ALCAR and FLASH. We choose a representative setup with a black hole at the center, and vary the treatment of viscosity and neutrino transport. We find good overall agreement (∼10% level) in most quantities. The average outflow velocity is sensitive to the treatment of the nuclear binding energy of heavy nuclei, showing a larger variation than other quantities. We post-process trajectories from both codes with the same nuclear network, and explore the effects of code differences on nucleosynthesis yields, heating rates, and kilonova light curves. For the latter, we also assess the effect of varying the number of tracer particles in reconstructing the spatial abundance distribution for kilonova light curve production.</pre>
 </div>
 
 <script>
-function toggleBibtexfernandez2023viscous(parameter) {
-    var x= document.getElementById('afernandez2023viscous');
+function toggleBibtexfernandez2024viscous(parameter) {
+    var x= document.getElementById('afernandez2024viscous');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
         x.style.display = 'none';
     }
 }
-function toggleAbstractfernandez2023viscous(parameter) {
-    var x= document.getElementById('bfernandez2023viscous');
+function toggleAbstractfernandez2024viscous(parameter) {
+    var x= document.getElementById('bfernandez2024viscous');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -359,12 +372,8 @@ function toggleAbstractfernandez2023viscous(parameter) {
     }
 }
 </script>
-</li></ol>
-</div>
-
-<div class="jumbotron">
-  <h3 id="publications">Publications</h3>
-  <ol class="bibliography" reversed="reversed"><li><style>
+</li>
+<li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;
