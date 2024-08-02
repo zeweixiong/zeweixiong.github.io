@@ -21,7 +21,7 @@ A star with greater than about eight times solar mass ends its life when the cor
 The core collapses and bounces back when the supranuclear density is reached.
 The bounce lauches a shock wave that may lead to an explosion of supernova and forms a neutron star at the center.
 
-When two neutron stars in a binary system lose energy by gravitational wave emission and collide each other, a portion of the total mass is expelled dynamically during the coalescence.
+When two neutron stars in a binary system lose energy by gravitational wave emission and eventually collide with each other, a portion of the total mass is expelled dynamically during the coalescence.
 The rest of the two neutron stars merges into central remnant, either a transiently stable hyper-massive neutron star, or a black hole, surrounded by an accretion disk.
 
 Both core-collapse supernovae and neutron star mergers provide excellent laboratories to probe the physics at the extremes.
@@ -35,5 +35,5 @@ Understanding the mysterious neutrino flavor physics and the implications in tho
 ### About me
 
 As a physicist working in the field of neutrino and nuclear astrophysics,
-I received my undergraduate degree in physics from [Shanghai Jiao Tong University (SJTU)](https://en.sjtu.edu.cn) in 2015 and earned my Ph.D. from the [University of Minnesota](https://twin-cities.umn.edu) in 2020 under the supervision of Prof. Yong-Zhong Qian.
-Afterwards, I worked with Prof. Gabriel Martínez-Pinedo at GSI Helmhotz Center for Heavy Ion Research, Darmstadt, Germany.
+I received my undergraduate degree in physics from SJTU in 2015 and earned my Ph.D. from the [University of Minnesota](https://twin-cities.umn.edu) in 2020 under the supervision of Prof. Yong-Zhong Qian.
+Afterwards, I worked with Prof. Gabriel Martínez-Pinedo at [GSI Helmhotz Center for Heavy Ion Research](https:/www.gsi.de), Darmstadt, Germany.
