@@ -42,3 +42,7 @@ table-layout: fixed;
 ### Coding
 
 | [Brython](https://brython.info) | | |
+
+### Miscellaneous
+
+| [Jazz Darmstadt](https://www.jazzinstitut.de/jazzkalender/) | [Achteckhaus](https://jazzclub-darmstadt.de) | |
