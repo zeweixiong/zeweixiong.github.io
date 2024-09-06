@@ -11,8 +11,10 @@ Is the hidden depth behind the darkness of stardust as tranquil as it appears?
 <div class="container">
 <div class="row">
 <center>
-<img src="{{ site.url }}{{ site.baseurl }}/images/aurora.jpg" width="100%"/><br/>
-<p style="font-size: 10px; text-align: right;">photographed at Darmstadt, May 11, 2024</p>
+<!--<img src="{{ site.url }}{{ site.baseurl }}/images/aurora.jpg" width="100%"/><br/>
+<p style="font-size: 10px; text-align: right;">photographed at Darmstadt, May 11, 2024</p>-->
+<img src="https://theory.gsi.de/nucastro/zewei/images/DSC00842.jpg" width="100%"/><br/>
+<p style="font-size: 10px; text-align: right;">photographed at Yellowstone, August 9, 2020</p>
 </center>
 </div>
 </div>
