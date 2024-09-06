@@ -36,6 +36,5 @@ Understanding the mysterious neutrino flavor physics and the implications in tho
 
 ### About me
 
-As a physicist working in the field of neutrino and nuclear astrophysics,
 I received my undergraduate degree in physics from SJTU in 2015 and earned my Ph.D. from the [University of Minnesota](https://twin-cities.umn.edu) in 2020 under the supervision of Prof. Yong-Zhong Qian.
 Afterwards, I worked with Prof. Gabriel Martínez-Pinedo at [GSI Helmhotz Center for Heavy Ion Research](https:/www.gsi.de/en/contact), Darmstadt, Germany.
