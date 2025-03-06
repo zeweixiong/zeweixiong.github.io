@@ -30,10 +30,13 @@
 <div class="jumbotron">
   <h4>News</h4>
 
-  {% for article in site.data.news limit:2 %}
+  {% for article in site.data.news limit:1 %}
   <b>{{ article.date }}</b>
   {{ article.headline | markdownify }}
   {% endfor %}
+
+  <b>{{ site.data.news[-5].date }}</b>
+  {{ site.data.news[-5].headline | markdownify }}
 
   <b>{{ site.data.news[-3].date }}</b>
   {{ site.data.news[-3].headline | markdownify }}
