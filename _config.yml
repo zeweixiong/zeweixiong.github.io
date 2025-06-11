@@ -28,6 +28,7 @@ defaults:
 # Pages shown in navbar
 nav_pages:
   - name: about
+  - name: team
   - name: publications
   - name: talks
   - name: blog
