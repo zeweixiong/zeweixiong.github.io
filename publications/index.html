@@ -84,6 +84,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </li> 
         
           <li class="nav-item">
+            <a class="nav-link" href="https://zeweixiong.github.io/software">Software</a>
+          </li> 
+        
+          <li class="nav-item">
             <a class="nav-link" href="https://zeweixiong.github.io/blog">Blog</a>
           </li> 
         
@@ -108,6 +112,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="jumbotron">
   <h3 id="preprints">Preprints</h3>
   <ol class="bibliography" reversed="reversed"><li><style>
+.btn{
+    margin-bottom:5px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:15px;
+    padding-right:15px;
+    height:20px
+}
+
+pre{
+    white-space: pre-wrap;  
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap; 
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word; 
+    width:100%; overflow-x:auto;
+}
+</style>
+
+
+<!--<div class="text-justify"><span id="just2025rhine">Just, O., Xiong, Z., &amp; Martı́nez-Pinedo Gabriel. (2025). <i>RHINE: R-process Heating Implementation in hydrodynamic simulations with NEural networks</i>.</span></div>-->
+<div class="text-justify"><span id="just2025rhine">Just, O., <b>Xiong, Z.</b>, &amp; Martı́nez-Pinedo Gabriel. (2025). <i>RHINE: R-process Heating Implementation in hydrodynamic simulations with NEural networks</i>.</span></div>
+
+<!-- You can use the below to make your name bold -->
+<!-- <span id="just2025rhine">Just, O., Xiong, Z., &amp; Martı́nez-Pinedo Gabriel. (2025). <i>RHINE: R-process Heating Implementation in hydrodynamic simulations with NEural networks</i>.</span></div> -->
+
+
+
+
+
+
+<a href="https://arxiv.org/abs/2507.09040" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
+
+
+
+
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexjust2025rhine()">BIB</button>
+
+
+
+<button class="btn btn-warning btm-sm" onclick="toggleAbstractjust2025rhine()">ABSTRACT</button>
+
+
+
+<a href="https://arxiv.org/pdf/2507.09040.pdf" target="_blank"><button class="btn btn-info btm-sm">ARXIV PDF</button></a>
+
+
+
+
+
+<div id="ajust2025rhine" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>@unpublished{just2025rhine,
+  author = {{Just}, Oliver and {Xiong}, Zewei and {Mart{\'\i}nez-Pinedo}, Gabriel},
+  title = {{RHINE: R-process Heating Implementation in hydrodynamic simulations with NEural networks}},
+  year = {2025},
+  month = jul,
+  eprint = {2507.09040}
+}
+</pre>
+</div>
+
+
+<div id="bjust2025rhine" style="display: none; background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+<pre>Neutron-rich outflows in neutron-star mergers (NSMs) or other explosive events can be subject to substantial heating through the release of rest-mass energy in the course of the rapid neutron-capture (r-) process. This r-process heating can potentially have a significant impact on the dynamics determining the velocity distribution of the ejecta, but due to the complexity of detailed nuclear networks required to describe the r-process self-consistently, hydrodynamic models of NSMs often neglect r-process heating or include it using crude parametrizations. In this work, we present a conceptually new method, RHINE, for emulating the r-process and concomitant energy release in hydrodynamic simulations via machine-learning algorithms. The method requires the evolution of only a few additional quantities characterizing the composition, of which the nuclear rates of change are obtained at each location and time step from neural networks trained by a large set of trajectories from full nuclear-network calculations. The scheme is tested by comparing spherically symmetric wind simulations and long-term simulations of NSMs using RHINE with post-processing results from nucleosynthesis calculations, where we find very good agreement. In our NSM models on average about 2.3MeV, 0.7MeV, and 2.1MeV are released per baryon in dynamical ejecta, NS-torus ejecta, and black-hole (BH) torus ejecta, respectively. The strongest velocity boost is observed for BH-torus ejecta, which also become 40% more massive with r-process heating. The nucleosynthesis yields are only mildly affected by r-process heating, but the kilonova gets significantly brighter once the BH-torus ejecta become visible. RHINE can be readily implemented in existing hydrodynamics codes using pre-trained machine-learning data and routines for source-term prediction that we provide online.</pre>
+</div>
+
+<script>
+function toggleBibtexjust2025rhine(parameter) {
+    var x= document.getElementById('ajust2025rhine');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function toggleAbstractjust2025rhine(parameter) {
+    var x= document.getElementById('bjust2025rhine');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</li>
+<li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;

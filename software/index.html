@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>News - Zewei Xiong</title>
+  <title>Software - Zewei Xiong</title>
   <meta name="description" content="Academic homepage of Dr. Zewei Xiong">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://zeweixiong.github.io/allnews.html">
+  <link rel="canonical" href="https://zeweixiong.github.io/software/">
   <link rel="shortcut icon" type ="image/x-icon" href="https://zeweixiong.github.io/favicon.ico">
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -98,44 +98,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="container-fluid">
       <div class="row">
-        <div id="textid" class="col-sm-12">
-  <h2 id="news">News</h2>
+        <div id="gridid" class="col-sm-12 col-xs-12">
+  <h2 id="software">Software</h2>
 
 <div class="jumbotron">
-
-  <p><b>July 25, 2025</b></p>
-
-  <p>Actively searching for PhD student and Postdoc. If you are interested, please feel free to <a href="mailto:z.xiong@gsi.de">contact me</a>.</p>
-
-  <p><b>Feb 7, 2025</b></p>
-
-  <p><a href="https://arxiv.org/abs/2403.17269">Robust integration of fast flavor conversions in classical neutrino transport</a> is published in the <a href="https://doi.org/10.1103/PhysRevLett.134.051003">Physical Review Letters</a>.</p>
-
-  <p><b>Jan. 20, 2025</b></p>
-
-  <p><a href="https://www.gsi.de/en/jobscareer/job_offers/job_offers/doctoral-researcher-part-time-65-in-theoretical-neutrino-physics-and-nuclear-astrophysics-d-f-m-1443">[Hiring] <em>NeuTrAE</em> project is hiring a PhD student in neutrino physics and nuclear astrophysics!</a> The deadline is Feb. 20, 2025.</p>
-
-  <p><b>Sep. 5, 2024</b></p>
-
-  <p>An <a href="https://erc.europa.eu/news-events/news/erc-2024-starting-grants-results">ERC Starting Grant</a> from European Research Council (ERC) has been awarded to support my project, <em>NeuTrAE</em>, investigating neutrino flavor transformations in dense astrophysical environments. See also the news in the <a href="https://www.gsi.de/en/start/news/details/2024/09/05/erc-starting-grant-fuer-neutrinoforschung-geht-an-dr-zewei-xiong">GSI press release</a>.</p>
-
-  <p><b>June 3, 2024</b></p>
-
-  <p><a href="https://arxiv.org/abs/2402.19252">Fast neutrino flavor conversions in a supernova: Emergence, evolution, and effects</a> is published in the <a href="https://doi.org/10.1103/PhysRevD.109.123008">Physical Review D</a>.</p>
-
-  <p><b>May 9, 2024</b></p>
-
-  <p><a href="https://arxiv.org/abs/2305.11050">Production of 𝑝-Nuclei from 𝑟-Process Seeds: The 𝜈⁢𝑟-Process</a> is published in the <a href="https://doi.org/10.1103/PhysRevLett.132.192701">Physical Review Letters</a> as the Editor’s suggestion. See also the news in the <a href="https://doi.org/physics.aps.org/articles/v17/s56">Physics Synopsis</a> and <a href="https://www.gsi.de/en/start/news/details/2024/05/13/ein-neuer-prozess-fuer-die-synthese-von-seltenen-atomkernen-im-universum">GSI press release</a>.</p>
-
-  <p><b>Sep. 17, 2023</b></p>
-
-  <p>New preprint on arxiv: <a href="https://arxiv.org/abs/2309.09385">A Data-Driven Model for Abundances in Metal-poor Stars and Implications for Nucleosynthetic Sources</a>.</p>
-
-  <p><b>July 1, 2023</b></p>
-
-  <p><a href="https://arxiv.org/abs/2302.10928">End-to-end Kilonova Models of Neutron Star Mergers with Delayed Black Hole Formation</a> is published in the <a href="https://doi.org/10.3847/2041-8213/acdad2">Astrophysical Journal Letters</a>.</p>
-
+  <div class="row">
+    <div class="col-sm-8 col-xs-12">
+      <h4><a href="https://cosenu.github.io/cosenu_docs/">COSEν</a></h4>
+      <h6><i>Collective Oscillation Simulation Engine for Neutrinos</i></h6>
+      <p>COSEν is written in C++ and provides two advanced numerical schemes to simulate collective neutrino oscillations in the mean-field limit. The first method uses fourth order central finite differencing supplimented by third order Kreiss-Oliger dissipation scheme. The second one is implemented with the finite volume method along with the seventh order weighted essentially non-oscillatory scheme for the flux reconstruction across the cell boundaries. In both cases the time evolution is carried out via fourth order Runge-kutta method.</p>
+    </div>
+    <div class="col-sm-4">
+      <h4><br /></h4>
+      <p><a href="https://cosenu.github.io/cosenu_docs/">
+  <img src="https://theory.gsi.de/nucastro/zewei_images/cosenu.png" width="100%" style="max-width:250px" />
+  </a></p>
+    </div>
+  </div>
 </div>
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-8 col-xs-12">
+      <h4><a href="https://git.gsi.de/nucastro_public/rhine">RHINE</a></h4>
+      <h6><i>R-process Heating Implementation in hydrodynamic simulations with NEural networks</i></h6>
+      <p>RHINE is a machine-learning based Fortran code for modeling r-process heating in astrophysical hydrodynamic simulations. The code uses trained neural networks to provide fast and accurate estimates of r-process related rates of change for a set of characteristic quantities. RHINE is designed for integration into hydrodynamic simulations of astrophysical environments with r-process viable conditions such as neutron-star mergers. While maintaining a high accuracy comparable to detailed nuclear reaction networks, it avoids their large computational demands.</p>
+    </div>
+    <div class="col-sm-4">
+      <h4><br /></h4>
+      <p><a href="https://git.gsi.de/nucastro_public/rhine">
+  <img src="https://theory.gsi.de/nucastro/zewei_images/rhine.png" width="100%" style="max-width:250px" />
+  </a></p>
+    </div>
+  </div>
+</div>
+
 
 </div>
 
