@@ -1,0 +1,12 @@
+- name: COSEν
+  photo: https://theory.gsi.de/nucastro/zewei_images/cosenu.png
+  url: https://cosenu.github.io/cosenu_docs/
+  info: Collective Oscillation Simulation Engine for Neutrinos
+  about: "COSEν is written in C++ and provides two advanced numerical schemes to simulate collective neutrino oscillations in the mean-field limit. The first method uses fourth order central finite differencing supplimented by third order Kreiss-Oliger dissipation scheme. The second one is implemented with the finite volume method along with the seventh order weighted essentially non-oscillatory scheme for the flux reconstruction across the cell boundaries. In both cases the time evolution is carried out via fourth order Runge-kutta method."
+  #photo: https://theory.gsi.de/nucastro/Pics/YiSiou.png
+
+- name: RHINE
+  photo: https://theory.gsi.de/nucastro/zewei_images/rhine.png
+  url: https://git.gsi.de/nucastro_public/rhine
+  info: R-process Heating Implementation in hydrodynamic simulations with NEural networks
+  about: "RHINE is a machine-learning based Fortran code for modeling r-process heating in astrophysical hydrodynamic simulations. The code uses trained neural networks to provide fast and accurate estimates of r-process related rates of change for a set of characteristic quantities. RHINE is designed for integration into hydrodynamic simulations of astrophysical environments with r-process viable conditions such as neutron-star mergers. While maintaining a high accuracy comparable to detailed nuclear reaction networks, it avoids their large computational demands."
