@@ -51,7 +51,7 @@ The names of two additional elements in Japanese and Korean follow a different p
 
 Transitioning to metals reveals a different linguistic logic, particularly in East Asia, where historical interaction with ores shaped naming.
 
-- *Iron* (Fe, ferrum) is Eisen in German, Ferro in Italian, Oro in Spanish. In Chinese, it is 鐵 (tiě), in Japanese 鉄 (tetsu), and in Korean 철 (cheol). These Asian names often trace to physical characteristics or traditional use, rather than classical Latin roots.
+- *Iron* (Fe, ferrum) is Eisen in German, Ferro in Italian, Oro in Spanish. In Chinese, it is 鐵 (tiě), in Japanese 鉄 (tetsu), and in Korean 철 (cheol).
 
 - *Copper* (Cu, cuprum) is one of the earliest known metals. Its name comes from Latin cuprum, originally referring to the “metal of Cyprus” (aes Cyprium), reflecting the island where it was mined in antiquity. In German, it is called Kupfer, retaining the historical Germanic name. In Italian and Spanish, it is Rame and Cobre, respectively, showing a divergence from the Latin root but still historically connected. In East Asia, copper has a distinct set of characters reflecting long cultural familiarity with the metal. In Chinese, it is 銅 (tóng), in Japanese 銅 (dou), and in Korean 구리 (guri).
 
