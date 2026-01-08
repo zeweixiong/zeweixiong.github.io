@@ -15,7 +15,7 @@ These four elements form the backbone of chemistry and biochemistry, and they ar
 - *Hydrogen* (H, hydrogenium) derives from Greek hydro (“water”) and genes (“creator”), emphasizing its role in forming water. In German, it is called Wasserstoff, literally “water substance,” reflecting the same property-oriented naming. Japanese and Korean render it with the character 素 (-so), combined with 水 (sui) for “water,” as in 水素 (suiso) and 수소 (suso), literally “water element.” As we will see below, the practice originated during the Meiji Restoration (明治維新), when Japan adopted Western chemistry, following the German system and standardizing nonmetal elements with the suffix “-so”.<br>
 In Chinese, it is written as 氫 (qīng, note that Madarin is used for Chinese here, pronunciation may differ by Chinese dialects), a single character emphasizing lightness (巠) combined with its gas form (气), without using 素. In fact, during the early 20th century, the chemical elements were temporarily named in Chinese texts using a system modeled after Japanese nomenclature. However, this style was soon abandoned in favor of the one-character, one-syllable system that is standard in modern Chinese. This transition reflected a few practical and linguistic considerations: a single character is more concise, easier to write, and easier to integrate into classical and modern Chinese syntax; it also emphasizes semantic meaning over phonetic transcription. For example, many solid nonmetals are associated with the character 石 (shí, “stone”) such as in sulfur (硫) and phosphorus (磷), highlighting their naturally occurring mineral forms or solid crystalline appearance. In contrast, metals are frequently associated with the character 金 (jīn, “metal” or “gold”) such as in iron (鐵) and silver (銀), reflecting their lustrous, metallic character.
 
-- *Carbon* (C, carbonium) from Latin carbo meaning “coal,” reflects its earliest known forms. In German, it is Kohlenstoff (“coal substance”), while Japanese uses 炭素 (tanso), Korean 탄소 (tanso), and Chinese 碳 (tàn). Again, Japanese and Korean append “-so” to indicate it is an element, whereas Chinese uses a single character to represent the element itself. 
+- *Carbon* (C, carbonium) from Latin carbo meaning “coal,” reflects its earliest known forms. In German, it is Kohlenstoff (“coal substance”), while Japanese uses 炭素 (tanso), Korean 탄소 (tanso), and Chinese 碳 (tàn). Again, Japanese and Korean append “-so” to indicate it is an element, whereas Chinese uses a single character to represent the element itself. 
 
 - *Nitrogen* (N, nitrogenium) is named from Greek nitron and genes, “niter-former,” highlighting its role in nitric compounds. German uses Stickstoff, literally “suffocating substance,” reflecting its inability to support life, while Japanese and Korean adopt 窒素 (chisso) and 질소 (jilso), “element causing obstruction,” consistent with the descriptive property-based system. In early Chinese translations during the late Qing dynasty, nitrogen was called 淡氣 (dànqì), meaning “diluting gas,” because it does not support combustion or respiration. Later, this was standardized to the single character 氮 (dàn), retaining the semantic sense.
 
@@ -27,6 +27,8 @@ The next set includes nonmetal elements discovered later, often with mineral, co
 
 - *Boron* (B, borium) originates from Arabic buraq or Persian burah, related to borax. Japanese and Korean call it 硼素 (hōso) and 붕소 (bungso), “boron element,” while German simplifies it to Bor.
 
+- *Fluorine* (F, fluorum) from Latin fluere (“to flow”), denotes the mineral’s property. German Fluor and Korean 플루오린 (peulluo-rin) follow a similar phonetic and semantic pattern. In Japanese it is フッ素 (fusso). Korean has also a similar name 불소 (bulso).
+
 - *Silicon* (Si, silicium) from Latin silex (“flint”), became Silicium in German and other European languages. Japanese ケイ素 (keiso) and Korean 규소 (gyuso) both mean “flint element,” combining historical mineral association with 素.
 
 - *Chlorine* (Cl, chlorum) from Greek chloros (“greenish-yellow”), is Chlor in German. Japanese and Korean use 塩素 (enso) and 염소 (yeomso), meaning “salt element,” referring to its production from salts.
@@ -34,8 +36,6 @@ The next set includes nonmetal elements discovered later, often with mineral, co
 - *Arsenic* (As, arsenicum) from Greek arsenikon, is Arsen in German. Japanese/Korean 砒素 (hiso)/비소 (biso) literally means “arsenic element”.
 
 For the following three elements, only Japanese uses “素” while Korean adopts the direct phonetic translation.
-
-- *Fluorine* (F, fluorum) from Latin fluere (“to flow”), denotes the mineral’s property. German Fluor and Korean 플루오르 (peulluo-reu) follow a similar phonetic and semantic pattern.  In Japanese it is フッ素 (fusso).
 
 - *Bromine* (Br, bromum) named from Greek bromos (“stench”), follows the pattern: German Brom, Japanese 臭素 (shuso), “smelly element.”
 
